@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- LINKING STYLE HEET CSS3 FILE  -->
     <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | [Blogr]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | [Blogr]</title>
 </head>
 <body>
+
     <!-- adding navbar code -->
     <header>
         <div class="logo">
@@ -55,8 +50,40 @@
             <a href="" id="Login">Login</a>
             <a href="" id="sign-up">Sign Up</a>
         </div>
-        <div class="menu" id="mobile-menu">
-            <img src="./images/icon-hamburger.svg" alt="">
+        <button class="menu" id="mobile-menu">
+            <img class="" src="./images/icon-hamburger.svg">
+            <img class="hidden" src="./images/icon-close.svg">
+        </button>
+        <div class="menu-box hidden">
+            <div class="ul">
+                <button class="anchour" id="Product">Product</button>
+                <div class="anchour-content" id="connect-box">
+                    <a href="#">Overview</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Marketplace</a>
+                    <a href="#">Features</a>
+                    <a href="#">Integrations</a>
+                </div>
+                <button class="anchour" id="Company">Company</button>
+                <div class="anchour-content" id="connect-box">
+                    <a href="#">About</a>
+                    <a href="#">Team</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                </div>
+                <button class="anchour" id="Connect">Connect</button>
+                <div class="anchour-content showcase" id="connect-box">
+                    <a href="#">Contact</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+
+            <hr>
+            <div class="btns">
+                <button id="btn1">Login</button>
+                <button id="btn2">Sign Up</button>
+            </div>
         </div>
     </header>
 
@@ -72,6 +99,7 @@
     <section class="explainer-container">
         <div class="title"><p>Designed for the future</p></div>
         <img class="desktop-illustration" src="./images/illustration-editor-desktop.svg">
+        <img class="desktop-illustration-mb" src="./images/illustration-editor-mobile.svg">
         <div class="services">
             <div class="explainer">
                 <p class="header">Introducing an extensible editor</p>
@@ -87,20 +115,21 @@
                   </p>
             </div>
         </div>
+    </section>
 
-        <section class="box-container">
-            <img class="phones" src="./images/illustration-phones.svg">
-            <div class="text-container">
-                <p class="header">  State of the Art Infrastructure</p>
-                <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-                    This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+    <section class="box-container">
+        <div class="text-container">
+            <p class="header">  State of the Art Infrastructure</p>
+            <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+                This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
             </div>
         </section>
-    </section>
+        <img class="phones" src="./images/illustration-phones.svg">
 
     <section class="blogr-container">
         <div class="container">
-            <img src="./images/illustration-laptop-desktop.svg">
+            <img class="desktop-laptop" src="./images/illustration-laptop-desktop.svg">
+            <img class="desktop-mobile" src="./images/illustration-laptop-mobile.svg">
             <div class="text-warpper">
                 <div class="text-box">
                     <h4>Free, open, simple</h4>
@@ -118,7 +147,7 @@
         </div>
     </section>
     <footer>
-        <div class="footer-wrapper">
+
             <div class="logo"><img src="./images/logo.svg"></div>
         <div class="link-list">
             <p>Product</p>
@@ -141,33 +170,14 @@
             <a href="#">Newsletter</a>
             <a href="#">LinkedIn</a>
         </div>
+        <div class="footer-box" style="width: 100%; padding: 0; margin: 0;">
+            <div class="attribution" style="color: #fff;">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="https://github.com/ThisIzNeo">ThisIzNeo</a>.
+              </div>
         </div>
     </footer>
-  <!--
-  Product
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
 
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn -->
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 </body>
 </html>
