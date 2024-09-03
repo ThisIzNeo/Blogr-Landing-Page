@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
+    transition: .3s ease all;
 }
 
 body{
@@ -20,7 +21,7 @@ header{
     padding: 40px;
 }
 .links {
-    margin-right: 25%;
+    margin-right: 30%;
 }
 ul {
     list-style: none;
@@ -64,8 +65,37 @@ ul li a:hover {
 ul li:hover ul.dropdown{
     display: block;
 }
+.buttons a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 20px 10px;
+}
 
+#Login{
+    opacity: 0.8;
+}
+#Login:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+#sign-up {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 40px;
+    color: #ff5550;
+    padding: 15px 25px;
+}
+#sign-up:hover,
+.btn-primary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color:#fff
 
+}
+.menu {
+    display: none;
+}
 
 
 .home-container {
@@ -124,20 +154,9 @@ ul li:hover ul.dropdown{
     color: #fff;
     font-size: 16px;
 }
-.buttons a {
-    display: inline-block;
-    margin: 0 20px;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 500;
-    color: #fff;
-    padding: 20px 10px;
-}
-#sign-up {
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 40px;
+.btn-secondry:hover {
+    background: #fff;
     color: #ff5550;
-    padding: 17px 40px;
 }
 
 .explainer-container {
@@ -220,8 +239,74 @@ ul li:hover ul.dropdown{
     width: 77%;
     line-height: 25px;
 }
-.circle {
+
+.blogr-container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.container {
     position: absolute;
-    z-index: 1;
-    transform: translate(-20%, -10%);
+    top: 70%;
+}
+.container img {
+    transform: translateX(-280px);
+    width: 100%;
+    margin-bottom: 30px;
+}
+.container .text-warpper {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(45%, 5%);
+}
+
+.text-box h4{
+    color: hsl(237, 17%, 21%);
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 400;
+}
+.text-box p {
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #999;
+    font-weight: 300;
+}
+
+footer {
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    min-height: 40vh;
+}
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 60px;
+    position: absolute;
+    background: hsl(237, 7%, 19%);
+    border-radius: 0 100px 0 0;
+    width: 100%;
+    min-height: 40vh;
+    bottom: -600px;
+}
+.link-list {
+    display: flex;
+    flex-direction: column;
+}
+.link-list p {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+}
+.link-list a {
+    text-decoration: none;
+    color: #bbb;
+    margin-top: 15px;
+    transition: 0s;
+}
+.link-list a:hover {
+    text-decoration: underline;
 }
